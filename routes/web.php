@@ -1,0 +1,50 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+//use App\Http\Controllers\DosenController;
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
+|
+*/
+
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::get('/error', function () {
+    return "<h1>Server Error : ada kesalahan di server</h1>";
+});
+
+// route blog
+Route::get('/blog', 'App\Http\Controllers\BlogController@home');
+Route::get('/blog/tentang', 'App\Http\Controllers\BlogController@tentang');
+Route::get('/blog/kontak', 'App\Http\Controllers\BlogController@kontak');
+
+// coba coba
+
+Route::get('dosen', 'App\Http\Controllers\DosenController@index');
+Route::get('blog2', 'App\Http\Controllers\DosenController@blog');
+Route::get('biodata', 'App\Http\Controllers\DosenController@biodata');
+
+Route::get('/pegawai/{nama}', 'App\Http\Controllers\PegawaiController@index');
+
+
+Route::get('/formulir', 'App\Http\Controllers\PegawaiController@formulir');
+Route::post('/formulir/proses', 'App\Http\Controllers\PegawaiController@proses');
+
+// route ets
+Route::get('/home1', 'App\Http\Controllers\EtsController@home1');
+Route::get('/home1/hello', 'App\Http\Controllers\EtsController@hello');
+Route::get('/home1/style', 'App\Http\Controllers\EtsController@style');
+Route::get('/home1/style2', 'App\Http\Controllers\EtsController@style2');
+Route::get('/home1/responsive', 'App\Http\Controllers\EtsController@responsive');
+Route::get('/home1/form', 'App\Http\Controllers\EtsController@form');
+Route::get('/home1/linktree', 'App\Http\Controllers\EtsController@linktree');
+Route::get('/home1/testimoni', 'App\Http\Controllers\EtsController@testimoni');
