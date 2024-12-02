@@ -37,7 +37,13 @@
 		<tr>
 			<td>{{ $b->merkbolpen }}</td>
 			<td>{{ $b->stockbolpen }}</td>
-			<td>{{ $b->tersedia }}</td>
+			<td>
+                @if($b->tersedia === 'Y')
+                <i class="fa-solid fa-check text-success"></i>
+                @else
+                <i class="fa-solid fa-xmark text-danger"></i>
+                @endif
+            </td>
 			<td>
 				<a href="/pegawaiDB/bolpen/edit/{{ $b->kodebolpen }}" class="btn btn-info"><i class="fa-solid fa-pen-to-square"></i></a>
 				|

@@ -14,9 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+/*
 Route::get('/', function () {
     return view('welcome');
 });
+*/
 
 Route::get('/error', function () {
     return "<h1>Server Error : ada kesalahan di server</h1>";
@@ -66,3 +68,6 @@ Route::get('/pegawaiDB/bolpen/cari','App\Http\Controllers\BolpenController@carib
 Route::post('/pegawaiDB/bolpen/storebolpen','App\Http\Controllers\BolpenController@storebolpen');
 Route::get('/pegawaiDB/bolpen/hapus/{kode}','App\Http\Controllers\BolpenController@hapusbolpen');
 Route::post('/pegawaiDB/bolpen/update','App\Http\Controllers\BolpenController@updatebolpen');
+
+//Counter
+Route::get('/','App\Http\Controllers\CounterController@indexcounter');

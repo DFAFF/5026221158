@@ -12,6 +12,9 @@
 <body>
 
 <div class="container">
+    <a href="/pegawaiDB" class="btn btn-primary"> PegawaiDB</a>
+    <a href="/pegawaiDB/bolpen" class="btn btn-primary"> Bolpen</a>
+    <a href="/" class="btn btn-primary"> Counter</a>
     <h2>Dafa Fawwaz - 5026221158</h2>
     <h3>@yield('tulisan1')</h3>
 
