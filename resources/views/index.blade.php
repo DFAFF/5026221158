@@ -3,7 +3,9 @@
 @section('tulisan1','Data Pegawai')
 
 @section('link1')
-	<a href="/pegawaiDB/tambah" class="btn btn-primary"> + Tambah Pegawai Baru</a>
+    <a href="/pegawaiDB/bolpen" class="btn btn-warning"> bolpen</a>
+    <br></br>
+    <a href="/pegawaiDB/tambah" class="btn btn-primary"> + Tambah Pegawai Baru</a>
 @endsection
 
 @section('konten')

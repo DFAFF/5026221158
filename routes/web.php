@@ -57,3 +57,12 @@ Route::get('/pegawaiDB/hapus/{id}','App\Http\Controllers\PegawaiDBController@hap
 Route::get('/pegawaiDB/edit/{id}','App\Http\Controllers\PegawaiDBController@edit');
 Route::post('/pegawaiDB/update','App\Http\Controllers\PegawaiDBController@update');
 Route::get('/pegawaiDB/cari','App\Http\Controllers\PegawaiDBController@cari');
+
+//route bolpen
+Route::get('/pegawaiDB/bolpen','App\Http\Controllers\BolpenController@indexbolpen');
+Route::get('/pegawaiDB/bolpen/tambah','App\Http\Controllers\BolpenController@tambahbolpen');
+Route::get('/pegawaiDB/bolpen/edit/{kode}','App\Http\Controllers\BolpenController@editbolpen');
+Route::get('/pegawaiDB/bolpen/cari','App\Http\Controllers\BolpenController@caribolpen');
+Route::post('/pegawaiDB/bolpen/storebolpen','App\Http\Controllers\BolpenController@storebolpen');
+Route::get('/pegawaiDB/bolpen/hapus/{kode}','App\Http\Controllers\BolpenController@hapusbolpen');
+Route::post('/pegawaiDB/bolpen/update','App\Http\Controllers\BolpenController@updatebolpen');
