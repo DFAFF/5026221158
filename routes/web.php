@@ -74,3 +74,8 @@ Route::get('/','App\Http\Controllers\CounterController@indexcounter');
 
 //AA
 Route::get('/aa','App\Http\Controllers\AaController@indexaa');
+
+//EAS
+Route::get('/eas','App\Http\Controllers\EasController@indexeas');
+Route::get('/eas/tambah','App\Http\Controllers\EasController@tambaheas');
+Route::post('/eas/storeeas','App\Http\Controllers\EasController@storeeas');
