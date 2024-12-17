@@ -71,3 +71,6 @@ Route::post('/pegawaiDB/bolpen/update','App\Http\Controllers\BolpenController@up
 
 //Counter
 Route::get('/','App\Http\Controllers\CounterController@indexcounter');
+
+//AA
+Route::get('/aa','App\Http\Controllers\AaController@indexaa');
