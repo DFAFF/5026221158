@@ -36,7 +36,7 @@
                @else
                <i>A</i>
                @endif
-            <td>{{ $s->Bobot }}</td>
+            <td>{{ $s->NilaiAngka*$s->SKS }}</td>
            </td>
 
        </tr>
